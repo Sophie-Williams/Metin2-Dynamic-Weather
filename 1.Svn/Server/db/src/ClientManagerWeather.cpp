@@ -26,7 +26,7 @@ void CClientManager::UpdateWeatherInfo()
 			TPacketSetEventFlag p;
 			std::strcpy(p.szFlagName, flag);
 			p.lValue = val;
-			CClientManager::Instance().SetEventFlag(&p);
+			SetEventFlag(&p);
 		}
 	};
 	
