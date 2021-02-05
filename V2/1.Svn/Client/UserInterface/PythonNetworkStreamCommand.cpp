@@ -19,6 +19,9 @@
 			return;
 		}
 		
+		if (!CPythonBackground::Instance().IsMapOutdoor())
+			return;
+		
 		static const std::unordered_map<std::string, std::pair<std::string, std::string>> TextureList = {
 			{ "metin2_map_a1", { "textureset/metin2_a1.txt", "textureset/snow/snow_metin2_a1.txt" }},
 			{ "map_a2",	{ "textureset/metin2_a2.txt", "textureset/snow/snow_metin2_a2.txt" }},
